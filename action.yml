@@ -32,7 +32,7 @@ runs:
       run: echo "::set-output name=value::$(git rev-parse --short HEAD)"
 
     - name: Build and push
-      uses: docker/build-push-action@v3
+      uses: docker/build-push-action@v4
       with:
         context: .
         push: true
